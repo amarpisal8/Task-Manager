@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-photo/tool-used-coffee-press-cup_23-2149878089.jpg?w=740&t=st=1700634816~exp=1700635416~hmac=813b71386afe7cf870ca46a5cbcabcbde16b2e5d0538ffcdb405451453aa24c6');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px) saturate(70%);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.code-section,
+.task-section {
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+    /* background-color: transparent; */
+}
+
+#codeInput {
+    width: 100%;
+    height: 100px;
+    font-size: 36px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(2, 54, 54);
+}
+
+.operations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#addTaskBtn {
+    background-color: #4caf50;
+    color: #fff;
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#timeInput {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.time_icon{
+    background-color: #800080;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.task-section {
+    padding: 20px;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.task-item:hover {
+    background-color: #f0f0f0;
+}
+
+.task-item span {
+    margin-right: 10px;
+}
+
+.task-item .edit,
+.task-item .delete,
+.task-item .complete {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 8px 12px;
+    margin: 10 5px;
+    margin-left: 80%;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.task-item .edit {
+    left: 10px;
+    /* color: #2196f3; Blue */
+}
+
+.task-item .delete {
+    left: 40px;
+    /* color: #f44336; Red */
+}
+
+.task-item .complete {
+    left: 70px;
+    /* color: #800080; Purple */
+}
