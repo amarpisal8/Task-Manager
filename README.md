@@ -2,6 +2,10 @@
 
 <p id="description">Task Manager App is a web project developed with HTML CSS and JavaScript featuring a beautiful UI design enriched with Font Awesome icons. The application allows users to effortlessly add tasks with associated dates and times. Essential functionalities include the ability to delete edit and mark tasks as complete for an intuitive task management experience.</p>
 
+<h2>🚀 Demo</h2>
+
+[https://mellifluous-madeleine-fcb048.netlify.app/](https://mellifluous-madeleine-fcb048.netlify.app/)
+
   
   
 <h2>🧐 Features</h2>
